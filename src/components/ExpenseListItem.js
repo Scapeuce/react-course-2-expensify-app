@@ -11,7 +11,7 @@ const ExpenseListItem = ({  description, amount, createdAt,id}) => (
             <h3>{description}</h3>
         </Link>
         
-        <p> {id}</p>
+        
         <p>
             {numeral(amount/100).format('$0,0.00')}
              -
