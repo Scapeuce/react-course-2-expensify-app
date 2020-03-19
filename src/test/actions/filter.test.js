@@ -15,19 +15,19 @@ test('Should generate set end date action object', () => {
     })
 })
 test('Should generate set text filter object', () => {
-    const update = "esto y lo otro'"
-    const action = setTextFilter(update);
+    const text = "esto y lo otro'"
+    const action = setTextFilter(text);
     
     expect(action).toEqual({
         type: 'SET_TEXT_FILTER',
-        update
+        text
     })
 })
 test('Should generate set text filter object, no argument', () => {
     const action = setTextFilter();
     expect(action).toEqual({
         type: 'SET_TEXT_FILTER',
-       update: ''
+       text: ''
     })
 })
 test('Should generate sort by date object', () => {

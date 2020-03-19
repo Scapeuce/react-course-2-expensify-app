@@ -1,7 +1,7 @@
 //SET_TEXT_FILTER
-export const setTextFilter = (update = '') => ({
+export const setTextFilter = (text = '') => ({
     type: 'SET_TEXT_FILTER',
-     update
+     text
 
 })
 //SORT_BY_DATE

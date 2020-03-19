@@ -31,7 +31,7 @@ exports[`Should render ExpenseForm correctly 1`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
-      id="xx5"
+      id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
       isDayBlocked={[Function]}
@@ -96,7 +96,7 @@ exports[`Should render ExpenseForm correctly 1`] = `
     />
     <textarea
       onChange={[Function]}
-      placeholder="Add note for your expense (optional)"
+      placeholder="Add a note for your expense (optional)"
       value=""
     />
     <button>
@@ -137,7 +137,7 @@ exports[`Should render ExpenseForm with expense data correctly 1`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
-      id="xx5"
+      id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
       isDayBlocked={[Function]}
@@ -202,7 +202,7 @@ exports[`Should render ExpenseForm with expense data correctly 1`] = `
     />
     <textarea
       onChange={[Function]}
-      placeholder="Add note for your expense (optional)"
+      placeholder="Add a note for your expense (optional)"
       value=""
     />
     <button>
@@ -243,7 +243,7 @@ exports[`Should render error for invalid form submission 1`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
-      id="xx5"
+      id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
       isDayBlocked={[Function]}
@@ -308,7 +308,7 @@ exports[`Should render error for invalid form submission 1`] = `
     />
     <textarea
       onChange={[Function]}
-      placeholder="Add note for your expense (optional)"
+      placeholder="Add a note for your expense (optional)"
       value=""
     />
     <button>
@@ -321,7 +321,7 @@ exports[`Should render error for invalid form submission 1`] = `
 exports[`Should render error for invalid form submission 2`] = `
 <div>
   <p>
-    Please provide description and amount
+    Please provide description and amount.
   </p>
   <form
     onSubmit={[Function]}
@@ -352,7 +352,7 @@ exports[`Should render error for invalid form submission 2`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
-      id="xx5"
+      id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
       isDayBlocked={[Function]}
@@ -417,7 +417,7 @@ exports[`Should render error for invalid form submission 2`] = `
     />
     <textarea
       onChange={[Function]}
-      placeholder="Add note for your expense (optional)"
+      placeholder="Add a note for your expense (optional)"
       value=""
     />
     <button>
