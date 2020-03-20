@@ -1,0 +1,110 @@
+import * as firebase from 'firebase';
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBGIV-Tk8dUIt-AN3QPiKBNWhwuBtldcis",
+    authDomain: "expensify-scapeuce.firebaseapp.com",
+    databaseURL: "https://expensify-scapeuce.firebaseio.com",
+    projectId: "expensify-scapeuce",
+    storageBucket: "expensify-scapeuce.appspot.com",
+    messagingSenderId: "204968546696",
+    appId: "1:204968546696:web:235f3248b851e10b4a2a3d",
+    measurementId: "G-8F10QNH1B0"
+};
+  
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+
+expenses = [{
+    description: 'descrption of  expenses 1',
+    note:'Note # 1' ,
+    amount: 10,
+    createAt: 10
+},
+    {
+    description: 'descrption of  expenses 2',
+    note:'Note # 2' ,
+    amount: 700,
+    createAt: 101
+    },
+    {
+    description: 'descrption of  expenses 3',
+    note:'Note # 3' ,
+    amount: 1700,
+    createAt: 151
+}
+]
+expenses.map((expense => {
+database.ref('expenses').push(expense)
+})
+// database.ref('notes/-M2mtryaEiRe-gTu23kJ').remove()
+// database.ref('notes').push({
+//     title: 'Course topics',
+//     body: 'cobol, js, db2'
+// })
+
+
+
+// database.ref().set(notes)
+//  database.ref().on('value', (snapshot) => {
+//    const onV =snapshot.val()
+//     console.log(`${onV.name}  is a  ${onV.job.title}  at  ${onV.job.company}`)
+// }, (e) => {
+//         console.log('Error with data fetching', e)
+// });
+// const onValueChange = database.ref().on('value', (snapshot) => {
+//     console.log(snapshot.val())
+// }, (e) => {
+//         console.log('Error with data fetching', e)
+// });
+// setTimeout(() => {
+//    database.ref('age').set(45) 
+// }, 3500)
+// setTimeout(() => {
+//    database.ref().off(onValueChange)
+// }, 7000)
+// setTimeout(() => {
+//    database.ref('age').set(50) 
+// },10500)
+
+// database.ref('location').once('value')
+//     .then((snapshot) => {
+//         const val = snapshot.val()
+//         console.log(val);
+//     }).catch(() => {
+//         console.log('Error fetching data');
+//     });
+
+// database.ref().set({
+//     name: 'Andres Lillo',
+//     age: 55,
+//     stressLevel: 6,
+//     job: {
+//         title: 'Fly fisher',
+//         company:'Rod, Hooks and Feathers'
+//     },
+//     isGrosso: true,
+//     location:{
+//         city: 'Auckland',
+//         country: 'New Zealand'
+//     }
+//     // when the operation has been done
+// }).then(() => {
+//     console.log('Data is saved')
+// }).catch((e) => {
+//     console.log('this failed ', e)
+// })
+// database.ref().update({
+//     'job/title': 'Fly tier',
+//     stressLevel: 9,
+//     'location/city': 'Seattle'
+    
+   
+// });
+// const remGrosso = database.ref('isGrosso');
+// remGrosso.remove()
+//     .then(() => {
+//         console.log('isGrosso removed')
+//     })
+//     .catch((e) => {
+//         console.log("Failed removing isGrosso, e ")
+//     });
